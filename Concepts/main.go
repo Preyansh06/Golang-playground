@@ -4,23 +4,22 @@ import (
 	"fmt"
 )
 
-// by default false
-var status bool
-
 func main() {
-	// Explicite declaration
-	const name string = "Preyansh"
-	var age int = 23
-	status1 := true
+	var companyName string
+	var role string
+	var salary float64
 
-	fmt.Println("Name: ", name)
-	fmt.Println("Age: ", age)
+	fmt.Println("Enter comapny name:")
+	fmt.Scanln(&companyName)
 
-	name2 := "Khanna"
-	age2 := 23
+	fmt.Println("Enter your role:")
+	fmt.Scanln(&role)
 
-	fmt.Println("Name2:", name2)
-	fmt.Println("Age2:", age2)
-	fmt.Println("Status:", status)
-	fmt.Println("Status1:", status1)
+	fmt.Println("Enter your salary:")
+	fmt.Scanln(&salary)
+
+	println("Company name:", companyName)
+	println("Role:", role)
+	fmt.Printf("Salary: %.2f\n", salary)
+
 }
