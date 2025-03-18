@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello Golang!!")
-	
+	var name string = "Preyansh"
+	var age int = 23
+
+	fmt.Println(name)
+	fmt.Println(age)
 }
