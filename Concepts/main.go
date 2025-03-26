@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// for loop in Go
@@ -20,9 +22,31 @@ func main() {
 	// 	fmt.Printf("Coding Languages: %s\n", arr[i])
 	// }
 
-	var arr [3]int
-	fmt.Println("Enter 3 numbers:")
+	//Arrays
+	// var arr [3]int
+	// fmt.Println("Enter 3 numbers:")
 
+	// for i := 0; i < 3; i++ {
+	// 	fmt.Scanf("%d\n", &arr[i])
+	// }
+
+	// maxNum := arr[0]
+
+	// for i := 0; i < 3; i++ {
+	// 	if maxNum < arr[i] {
+	// 		maxNum = arr[i]
+	// 	}
+	// }
+
+	// fmt.Println("The highest number entered is: ", maxNum)
+
+	//Slices in Go
+	var n int
+	fmt.Println("Enter n: ")
+	fmt.Scanln(&n)
+
+	arr := make([]int, n)
+	fmt.Println("Enter ", n, "numbers: ")
 	for i := 0; i < 3; i++ {
 		fmt.Scanf("%d\n", &arr[i])
 	}
@@ -36,5 +60,4 @@ func main() {
 	}
 
 	fmt.Println("The highest number entered is: ", maxNum)
-
 }
